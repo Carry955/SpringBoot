@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carry.mapper.UserMapper">
+  <select id="selectAll" resultType="com.carry.pojo.User">
+    select * from test
+  </select>
+  <insert id="insert" parameterType="com.carry.pojo.User">
+  	insert into test values(#{number}, #{name}, #{age}, #{gender})
+  </insert>
+</mapper>
